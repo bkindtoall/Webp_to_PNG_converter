@@ -2,11 +2,14 @@ from PIL import Image
 import os
 
 # Define input and output folders
-input_folder = r'C:\Users\bkind\iCloudDrive\Data_Projects_and_Tools\pngs logos icons\png files for keeping'  # Replace with your actual input folder path
-output_folder = r'C:\Users\bkind\iCloudDrive\Data_Projects_and_Tools\pngs logos icons\png files for keeping'  # Replace with your desired output folder path
+input_folder = 'D:\dev\convert_images\webp_files'  # Replace with your actual input folder path
+output_folder = 'D:\dev\convert_images\converted_pngs'  # Replace with your desired output folder path
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
+
+# Initialize a counter for the number of files converted
+files_converted = 0
 
 # Loop through files in the input folder
 for file_name in os.listdir(input_folder):
