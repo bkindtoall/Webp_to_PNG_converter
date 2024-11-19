@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 # Define input and output folders
-input_folder = 'D:\dev\convert_images\webp_files'  # Replace with your actual input folder path
-output_folder = 'D:\dev\convert_images\converted_pngs'  # Replace with your desired output folder path
+input_folder = input("Enter the path to the input folder: ").strip()
+output_folder = input("Enter the path to the output folder: ").strip()
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
